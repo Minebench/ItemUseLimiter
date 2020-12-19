@@ -1,0 +1,17 @@
+name: ItemUseLimiter
+main: de.themoep.bukkit.ItemUseLimiter.ItemUseLimiter
+version: '${minecraft.plugin.version}'
+description: Bukkit plugin to limit the usage of the rightcklick function of certain items
+authors: [Phoenix616]
+api-version: 1.16
+commands:
+   setitemuselimit:
+      aliases: [setiul]
+      description: Configuration command
+      usage: /<command> <id|name> <time in s>
+      permission: ItemUseLimiter.admin
+      permission-message: You don't have the permission <permission>
+permissions:
+   ItemUseLimiter.admin:
+      description: Gives permission to the command
+      default: op
