@@ -1,5 +1,5 @@
 name: ItemUseLimiter
-main: de.themoep.bukkit.ItemUseLimiter.ItemUseLimiter
+main: de.themoep.itemuselimiter.ItemUseLimiter
 version: '${minecraft.plugin.version}'
 description: Bukkit plugin to limit the usage of the rightcklick function of certain items
 authors: [Phoenix616]
