@@ -63,8 +63,8 @@ public class ItemUseLimiter extends JavaPlugin implements Listener {
                     Material id = Material.valueOf(item.toUpperCase());
                     itemIdLimits.put(id, time);
                     getLogger().log(Level.INFO, "Added cooldown for item " + item + ": " + time + "s");
-                } catch (NumberFormatException e) {
-                    getLogger().log(Level.SEVERE, "Wrong item config " + item);
+                } catch (IllegalArgumentException e) {
+                    getLogger().log(Level.SEVERE, "Wrong item config " + item + " (not a valid material)");
                 }
             }
         }
